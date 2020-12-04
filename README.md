@@ -14,7 +14,7 @@ RESTful API con Spring Boot y MySQL
 
  ## Pasos para la instalación. 
  
-Tener instalado Java, MySQL, Apache Maven y un IDE compatible con Spring Tool Suite. 
+Tener instalado Java, MySQL, y Apache Maven. 
 
 Clonar el repositorio. Ejecutar `git clone https://github.com/Irving1596/RESTAPI_SPRING.git`   
 
