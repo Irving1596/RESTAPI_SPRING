@@ -20,7 +20,25 @@ Clonar el repositorio. Ejecutar `git clone https://github.com/Irving1596/RESTAPI
 
 Situarse en el directorio `RESTAPI_SPRING`   
 
-Ejecutar  `mvn spring-boot:run` ya con este comando se estaria levantando el aplicativo. 
+Ejecutar  `mvn spring-boot:run` con este comando se estaria levantando el aplicativo.
+
+Otra forma de ejecutar la aplicación es importando el proyecto en eclipse.
+
+Abre Eclipse. 
+
+Click File > Import. 
+
+Seleccionar en import source: Existing Maven Projects. 
+
+Click Next. 
+
+Click Browse y seleccionamos la carpeta `RESTAPI_SPRING`. 
+
+Click Next  
+
+Click Finish. 
+
+Ya con esos pasos tendriamos el proyecto importado en eclipse y solo seria cuestión de levantarlo.
 
 ## EndPoints 
 
