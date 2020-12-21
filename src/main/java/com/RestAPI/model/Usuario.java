@@ -56,6 +56,20 @@ public class Usuario {
     @LastModifiedBy
     private String updatedBy;
     
+    public Usuario(int id,String nombre, String apellido, String sexo, int edad,String correo,Date createdAt,String createdBy,Date updatedAt,String updatedBy) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.sexo = sexo;
+		this.edad = edad;
+		this.correo = correo;
+		this.createdAt = createdAt;
+		this.createdBy = createdBy;
+		this.updatedAt = updatedAt;
+		this.updatedBy = updatedBy;
+		
+	}
 
 // setters and getters
 	public String getNombre() {

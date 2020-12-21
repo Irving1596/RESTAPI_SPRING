@@ -1,8 +1,12 @@
-package com.RestAPI;
+package com.RestAPI.controllertest;
+
+
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Date;
 
 import org.assertj.core.util.Lists;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -23,11 +27,9 @@ import com.RestAPI.service.UsuarioService;
 @RunWith(SpringRunner.class)
 @WebMvcTest
 @WithMockUser
-class SpringBootRestApiApplicationTests {
-	@Test
-	void contextLoads() {
-	}
-/*
+
+class UsuarioControllerTest {
+
 	@Autowired
 	private MockMvc mockMvc;
 
@@ -41,8 +43,12 @@ class SpringBootRestApiApplicationTests {
 
 	String exampleCourseJson = "{\"id\":\"1\",\"nombre\":\"Irving\",\"apellido\":\"Sanchez\",\"sexo\":\"M\",\"edad\":\"24\",\"correo\":\"irving.sanchezp@up.ac.pa\",\"createdAt\":\"2015-03-31\",\"createdBy\":\"Irving\",\"updatedAt\":\"2015-03-31\",\"updatedBy\":\"Irving\"}";
 
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
 	@Test
-	public void findAllUsuarios() throws Exception {
+	void testList() throws Exception  {
 
 		Mockito.when(
 				usuarioService.listAllUser()).thenReturn(Lists.newArrayList(mockUsuario));
@@ -61,5 +67,5 @@ class SpringBootRestApiApplicationTests {
 		JSONAssert.assertEquals(expected, result.getResponse()
 				.getContentAsString(), false);
 	}
-	*/
+
 }
